@@ -31,6 +31,10 @@ def show_notes(dict_note: dict, error_message: str):
             for item in note.values():
                 note_list.append(item) #все элементы из словаря добавляются в список note_list
             print(f'#{note_id} | {note_list[-1]}\nТема: {note_list[0]}\n{note_list[1]}\n') #печатаем id, посл элемент списка - это таймстемп, затем 0 элемент списка - титул, затем 1 элемент списка - заметку
-             
+
     else:
         show_message(error_message)
+
+
+def input_data(message: str) -> str:
+    return input(message)
