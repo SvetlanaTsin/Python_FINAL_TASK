@@ -18,7 +18,7 @@ def save_file():
         json.dump(dict_note, json_file, indent=4, ensure_ascii=False)  #indent определеяет отступы, ensure_ascii=False позволяет вывести кириллицу
 
 
-def _next_id():
+def _next_id(): #добавление подчерк в начале имени функции обозначает, что эта функция работает только в этом модуле
     global dict_note
     return max(map(int, dict_note)) + 1
 
